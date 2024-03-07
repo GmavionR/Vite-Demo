@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    div {
+        border: 2px dotted darkblue;
+    }
+
+    .father {
+        width: 300px;
+        height: 200px;
+        position: relative;
+    }
+
+    .right {
+        height: 0;
+        text-align: right;
+        overflow: hidden;
+    }
+
+    .son {
+        display: inline;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        margin-left: -40px;
+    }
+
+    :focus+label.btn {}
+
+    .footer {
+        height: 50px;
+    }
+
+    .footer>p {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 15px 0;
+        background-color: #a0b3d6;
+        outline: 9999px solid #a0b3d6;
+        clip: rect(0, 9999px, 9999px, 0);
+    }
+    </style>
+</head>
+
+<body>
+    <div style="height:300px;"></div>
+    <div class="footer">
+        <p> Design; power by abc</p>
+    </div>
+</body>
+
+<script type="module" src="./a.js"> </script>
+
+</html>
